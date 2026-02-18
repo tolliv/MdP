@@ -1,0 +1,89 @@
+<!---------------------------------------------------------
+ Programme MdP
+----------------------------------------------------------->
+<!DOCTYPE html>
+<html lang='fr'>
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+  <link rel="manifest" href="manifest.json">
+  <title>MdP</title>
+  <meta charset='UTF-8'>
+</head>
+<body>
+
+<!----- STYLES -------------------------------------------->
+<link rel='stylesheet' type='text/css' href='styles.css'>
+
+<!----- ECRAN CODE ----->
+<div id='scrCode'>
+  <span style='font-size:2em;'><b>MdP</b></span> <span style='font-size:0.8em;'>v2601.25</span><br>
+  <br>
+  <span id='TxtIntro'>Entrez votre code :</span>
+  <div id="code-container">
+    <div class="code-slot"></div>
+    <div class="code-slot"></div>
+    <div class="code-slot"></div>
+    &nbsp;
+    <div class="code-slot"></div>
+    <div class="code-slot"></div>
+    <div class="code-slot"></div>
+  </div>
+
+  <!-- Nouveau Clavier Numérique 1-9 -->
+  <div id="keyboard">
+    <div class="key-row">
+      <button class="key" onclick="pressKey('1')">1</button>
+      <button class="key" onclick="pressKey('2')">2</button>
+      <button class="key" onclick="pressKey('3')">3</button>
+      <button class="key" onclick="pressKey('4')">4</button>
+      <button class="key" onclick="pressKey('5')">5</button>
+    </div>
+    <div class="key-row">
+      <button class="key" onclick="pressKey('6')">6</button>
+      <button class="key" onclick="pressKey('7')">7</button>
+      <button class="key" onclick="pressKey('8')">8</button>
+      <button class="key" onclick="pressKey('9')">9</button>
+      <button class="key key-del" onclick="pressKey('DEL')">⌫</button>
+    </div>
+  </div>
+
+  <br>
+  <button id='ButValider' onclick='Entrer()' disabled>Valider</button><br>
+  <br>
+  <br>
+  <img src='cle.png' alt="clé">
+  <br><br>
+  <div id='debug'></div>
+</div>
+
+
+<!----- ECRAN HOME ----->
+<div id='scrHome'>
+  <div class='button-container' id='BarreHome'>
+    <button id='ButFermer' onclick='Fermer()'>Fermer</button>
+    &nbsp;&nbsp;
+    <button id='ButEditer' onclick='Editer()'>Editer</button>
+    &nbsp;&nbsp;
+  </div>
+  <div id='TxtFormated'></div>
+</div>
+
+<!----- ECRAN EDIT ----->
+<div id='scrEdit'>
+  <textarea id='TxtInput'>?</textarea>
+  <div class='button-container' id='BarreEdit'>
+    <button id='ButAnnuler' onclick='Annuler()'>Annuler</button>
+    &nbsp;&nbsp;
+    <button id='ButSauver' onclick='Sauver()'>Sauver</button>
+    &nbsp;&nbsp;
+    <button id='ButImporter' onclick='Importer()'>Importer</button>
+    &nbsp;&nbsp;
+    <button id='ButExporter' onclick='Exporter()'>Exporter</button>
+    &nbsp;&nbsp;
+  </div>
+</div>
+
+  <!----- CODE ---------------------------------------------->
+  <script src='code.js'></script>
+</body>
+</html>

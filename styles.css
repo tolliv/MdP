@@ -1,0 +1,256 @@
+html, body
+{
+  overscroll-behavior-y: contain;
+}
+
+
+body
+{
+  background-color: white;
+  font-family: verdana, sans-serif;
+  font-size: 14px;
+  color-scheme: light;
+}
+
+/*----- ECRAN CODE -----*/
+
+#scrCode
+{
+  font-size: 16px;
+  width: 100%;
+  text-align: center;
+}
+
+#TxtIntro
+{
+}
+
+#code-container {
+  display: flex;
+  justify-content: center;
+  gap: 4px;
+  margin: 5px 0;
+}
+
+.code-slot {
+  width: 25px;
+  height: 30px;
+  border: 1px solid #ccc;
+  background-color: white;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.5em;
+  font-weight: bold;
+  color: #585;
+}
+
+.code-slot:empty {
+  background-color: #def;
+}
+
+#keyboard {
+  margin: 20px auto;
+  display: inline-block;
+  user-select: none;
+}
+.key-row {
+  display: flex;
+  justify-content: center;
+}
+.key
+{
+  width: 45px;
+  height: 45px;
+  margin: 5px;
+  font-size: 1.5em;
+  font-weight: bold;
+  cursor: pointer;
+  border-radius: 10px;
+  border: 1px solid #ccc;
+  background-color: #f0f0f0;
+}
+.key:active
+{
+  background-color: #ddd;
+}
+.key-del
+{
+  width: 45px;
+  background-color: #ffcccc;
+}
+
+#ButValider
+{
+  padding: 5px 5px;
+  font-size: 16px;
+  width: 100px;
+  height: 50px;
+  border-radius: 15px;
+}
+
+/*----- ECRAN HOME -----*/
+
+#scrHome
+{
+  padding: 2px;
+  box-sizing: border-box;
+  display: none;
+}
+
+#BarreHome
+{
+  display: flex;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 45px;
+  background-color: gray;
+  padding-left: 10px;
+  padding-right: 10px;
+  box-sizing: border-box;
+
+  align-items: center;
+  z-index: 10;
+}
+
+#ButFermer
+{
+  padding: 5px;
+  font-size: 14px;
+  width: 70px;
+  height: 35px;
+  border-radius: 15px;
+  box-sizing: border-box;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  background-color: #000;
+  color: white;
+}
+
+#ButEditer
+{
+  padding: 5px;
+  font-size: 14px;
+  width: 70px;
+  height: 35px;
+  border-radius: 15px;
+  box-sizing: border-box;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  background-color: #FFD;
+  color: black;
+}
+
+#TxtFormated
+{
+  position: fixed;
+  width: 96%;
+  top: 50px;
+  bottom: 5px;
+  box-sizing: border-box;
+  resize: none;
+  overflow-y: scroll;
+  overflow-x: hidden;
+}
+
+/*----- ECRAN EDITION -----*/
+
+#scrEdit
+{
+  padding: 2px;
+  box-sizing: border-box;
+  display: none;
+}
+
+#BarreEdit
+{
+  display: flex;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 45px;
+  background-color: gray;
+  padding-left: 10px;
+  padding-right: 10px;
+  box-sizing: border-box;
+
+  align-items: center;
+  z-index: 10;
+}
+
+#ButAnnuler
+{
+  padding: 5px;
+  font-size: 14px;
+  width: 70px;
+  height: 35px;
+  border-radius: 15px;
+  box-sizing: border-box;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  background-color: #000;
+  color: white;
+}
+
+#ButSauver
+{
+  padding: 5px;
+  font-size: 14px;
+  width: 70px;
+  height: 35px;
+  border-radius: 15px;
+  box-sizing: border-box;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  background-color: #0F0;
+  color: black;
+}
+
+#ButImporter
+{
+  padding: 5px;
+  font-size: 14px;
+  width: 70px;
+  height: 35px;
+  border-radius: 15px;
+  box-sizing: border-box;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  background-color: #FFD;
+  color: black;
+}
+
+#ButExporter
+{
+  padding: 5px;
+  font-size: 14px;
+  width: 70px;
+  height: 35px;
+  border-radius: 15px;
+  box-sizing: border-box;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  background-color: #FFD;
+  color: black;
+}
+
+
+#TxtInput
+{
+  position: fixed;
+  width: 95%;
+  top: 50px;
+  bottom: 5px;
+  box-sizing: border-box;
+  resize: none;
+}
